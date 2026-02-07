@@ -18,7 +18,8 @@
 
 	<properties>
 		<java.version>11</java.version>
-		<sonar.organization>devopsmbalearning</sonar.organization>
+		<sonar.organization>rpmprates</sonar.organization>
+		<sonar.projectKey>rpmprates_devops-ci-cd</sonar.projectKey>
   		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
 
