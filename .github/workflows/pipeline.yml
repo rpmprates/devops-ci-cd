@@ -26,5 +26,4 @@ jobs:
         path: ./target/demo-0.0.2.7-SNAPSHOT.jar
     
     - name: Package
-      run: mvn package            
-          
+      run: mvn package          
