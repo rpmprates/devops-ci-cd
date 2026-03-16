@@ -1,33 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Consulta de Conta</title>
+    <title>Demo API</title>
 </head>
 
 <body>
 
-<h2>Consultar Saldo</h2>
+<h1>Consulta de Conta</h1>
 
 <input id="conta" placeholder="Digite a conta">
-<button onclick="consultarSaldo()">Consultar</button>
+<button onclick="consultar()">Consultar</button>
 
-<h3 id="resultado"></h3>
+<p id="resultado"></p>
 
 <script>
-
-async function consultarSaldo(){
-
-    const conta = document.getElementById("conta").value;
-
-    const response = await fetch("http://localhost:8080/contas/" + conta + "/saldo");
-
-    const data = await response.json();
-
+function consultar(){
     document.getElementById("resultado").innerText =
-        "Saldo: " + data.saldo;
-
+        "Consulta realizada com sucesso";
 }
-
 </script>
 
 </body>
